@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DemoLearning/static/css/main.976e4ccf.css",
+    "main.js": "/DemoLearning/static/js/main.71424aed.js",
+    "static/js/239.ed185644.chunk.js": "/DemoLearning/static/js/239.ed185644.chunk.js",
+    "static/js/977.cf7f1cfc.chunk.js": "/DemoLearning/static/js/977.cf7f1cfc.chunk.js",
+    "static/js/455.0a257cad.chunk.js": "/DemoLearning/static/js/455.0a257cad.chunk.js",
+    "static/js/453.5b80f43d.chunk.js": "/DemoLearning/static/js/453.5b80f43d.chunk.js",
+    "index.html": "/DemoLearning/index.html",
+    "main.976e4ccf.css.map": "/DemoLearning/static/css/main.976e4ccf.css.map",
+    "main.71424aed.js.map": "/DemoLearning/static/js/main.71424aed.js.map",
+    "239.ed185644.chunk.js.map": "/DemoLearning/static/js/239.ed185644.chunk.js.map",
+    "977.cf7f1cfc.chunk.js.map": "/DemoLearning/static/js/977.cf7f1cfc.chunk.js.map",
+    "455.0a257cad.chunk.js.map": "/DemoLearning/static/js/455.0a257cad.chunk.js.map",
+    "453.5b80f43d.chunk.js.map": "/DemoLearning/static/js/453.5b80f43d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.976e4ccf.css",
+    "static/js/main.71424aed.js"
+  ]
+}
