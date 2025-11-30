@@ -123,7 +123,7 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <img 
-              src="/profile.jpg" 
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
               alt="John Doe"
               className="profile-image"
             />
