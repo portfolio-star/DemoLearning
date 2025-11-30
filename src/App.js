@@ -7,11 +7,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
+
+
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // Check if user has a preference saved
+    // Check if user has a preference savedd
+
+    
     const savedMode = localStorage.getItem('darkMode');
     if (savedMode === 'true') {
       setDarkMode(true);
@@ -19,7 +24,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Apply dark mode class to body
+    // Apply dark mode class to body sandkjnwkdj
     if (darkMode) {
       document.body.classList.add('dark-mode');
     } else {
