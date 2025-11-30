@@ -11,15 +11,13 @@ import './App.css';
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    // Check if user has a preference savedd
-
-    
+    // Check if user has a preference saved
     const savedMode = localStorage.getItem('darkMode');
-    if (savedMode === 'true') {
-      setDarkMode(true);
+    if (savedMode !== null) {
+      setDarkMode(savedMode === 'true');
     }
   }, []);
 
