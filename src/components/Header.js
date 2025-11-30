@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Header.css';
 
-const Header = ({ darkMode, toggleDarkMode }) => {
+const Header = ({ darkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -65,26 +65,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               {item.name}
             </motion.button>
           ))}
-          <motion.button
-            className="dark-mode-toggle"
-            onClick={toggleDarkMode}
-            whileHover={{ scale: 1.1, rotate: 180 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {darkMode ? '☀️' : '🌙'}
-          </motion.button>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Right Side */}
         <div className="mobile-nav-controls">
-          <motion.button
-            className="dark-mode-toggle mobile"
-            onClick={toggleDarkMode}
-            whileHover={{ scale: 1.1, rotate: 180 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {darkMode ? '☀️' : '🌙'}
-          </motion.button>
           <motion.button
             className={`hamburger ${isMenuOpen ? 'open' : ''}`}
             onClick={toggleMenu}
@@ -96,25 +80,25 @@ const Header = ({ darkMode, toggleDarkMode }) => {
           </motion.button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Dropdown */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="mobile-menu"
-              initial={{ opacity: 0, x: '100%' }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: '100%' }}
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              className="mobile-menu-dropdown"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
             >
               {menuItems.map((item, index) => (
                 <motion.button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
                   className="mobile-nav-link"
-                  initial={{ opacity: 0, x: 50 }}
+                  initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ scale: 1.05, x: 10 }}
+                  transition={{ delay: index * 0.05 }}
+                  whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   {item.name}
