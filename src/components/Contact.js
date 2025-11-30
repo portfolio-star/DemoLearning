@@ -72,10 +72,10 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { name: 'GitHub', icon: FaGithub, url: 'https://github.com/yourusername', color: '#333' },
-    { name: 'LinkedIn', icon: FaLinkedin, url: 'https://linkedin.com/in/yourusername', color: '#0077b5' },
-    { name: 'Twitter', icon: FaTwitter, url: 'https://twitter.com/yourusername', color: '#1da1f2' },
-    { name: 'Email', icon: MdEmail, url: 'mailto:your.email@example.com', color: '#ea4335' }
+    { name: 'GitHub', icon: FaGithub, url: 'https://github.com/login', color: '#333' },
+    { name: 'LinkedIn', icon: FaLinkedin, url: 'https://www.linkedin.com/in/ranjankshah?utm_source=share_via&utm_content=profile&utm_medium=member_android', color: '#0077b5' },
+    { name: 'Twitter', icon: FaTwitter, url: 'https://twitter.com/login', color: '#1da1f2' },
+    { name: 'Email', icon: MdEmail, url: 'mailto:', color: '#ea4335' }
   ];
 
   return (

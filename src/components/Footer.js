@@ -68,10 +68,10 @@ const Footer = () => {
             <h4 className="footer-title">Connect</h4>
             <div className="footer-social">
               {[
-                { icon: FaGithub, name: 'GitHub', url: 'https://github.com/yourusername' },
-                { icon: FaLinkedin, name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-                { icon: FaTwitter, name: 'Twitter', url: 'https://twitter.com/yourusername' },
-                { icon: MdEmail, name: 'Email', url: 'mailto:your.email@example.com' }
+                { icon: FaGithub, name: 'GitHub', url: 'https://github.com/login' },
+                { icon: FaLinkedin, name: 'LinkedIn', url: 'https://www.linkedin.com/in/ranjankshah?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+                { icon: FaTwitter, name: 'Twitter', url: 'https://twitter.com/login' },
+                { icon: MdEmail, name: 'Email', url: 'mailto:' }
               ].map((social, index) => {
                 const IconComponent = social.icon;
                 return (
